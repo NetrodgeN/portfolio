@@ -14,20 +14,22 @@
         <a href="#" class="logo"><img src="#" alt="logo"></a>
         <nav class="header__navigation">
             <ul>
-            <li><a href="#" class="link"></a></li>
-            <li><a href="#" class="link"></a></li>
-            <li><a href="#" class="link"></a></li>
-            <li><a href="#" class="link"></a></li>
-            <li><a href="#" class="link"></a></li>
+            <li><a href="#" class="link">Skills</a></li>
+            <li><a href="#" class="link">Portfolio</a></li>
+            <li><a href="#" class="link">Video</a></li>
+            <li><a href="#" class="link">Price</a></li>
+            <li><a href="#" class="link">Contacts</a></li>
             </ul>
         </nav>
 
         <div class="header__language">
+            <input type="radio" id="en" name="language" value="eng">
+            <label for="en">en</label>
+
             <input type="radio" id="ru" name="language" value="ru">
             <label for="ru">ru</label>
 
-            <input type="radio" id="eng" name="language" value="eng">
-            <label for="eng">eng</label>
+
         </div>
     </div>
 </header>
@@ -73,19 +75,108 @@
         </div>
     </section>
 
+    <section class="portfolio">
+        <div class="wrapper">
+            <div class="section__title">
+                <h2>Portfolio</h2>
+            </div>
+            <div class="button__column">
+                <button class="button">Winter</button>
+                <button class="button">Spring</button>
+                <button class="button">Summer</button>
+                <button class="button">Autumn</button>
+            </div>
+            <div class="photo-library">
+                <img src="#" alt="#" class ="portfolio-item">
+                <img src="#" alt="#" class ="portfolio-item">
+                <img src="#" alt="#" class ="portfolio-item">
+                <img src="#" alt="#" class ="portfolio-item">
+                <img src="#" alt="#" class ="portfolio-item">
+                <img src="#" alt="#" class ="portfolio-item">
+            </div>
+        </div>
+    </section>
 
-    <section class="portfolio"></section>
+    <section class="video">
+        <div class="section__title">
+            <h2>Video</h2>
+        </div>
+        <div class="player">
 
-    <section class="video"></section>
+        </div>
+    </section>
 
-    <section class="price"></section>
+    <section class="price">
+        <div class="wrapper">
+        <div class="section__title">
+            <h2>Price</h2>
+        </div>
+        <div class="price__columns">
+            <div class="price__item">
+                <h3 class="price__heading">Standart</h3>
+                <p class="price__work">500 $</p>
+                <span>One location <!--делать блоком --> </span>
+                <span>120 photos in color</span>
+                <span>12 photos in retouch</span>
+                <span>Readiness 2-3 weeks</span>
+                <span>Make up, visage</span>
+                <button class="button">Order shooting</button>
+            </div>
+            <div class="price__item">
+                <h3 class="price__heading">Premium</h3>
+                <p class="price__work">700 $</p>
+                <span>One or two locations</span>
+                <span>200 photos in color</span>
+                <span>20 photos in retouch</span>
+                <span>Readiness 1-2 weeks</span>
+                <span>Make up, visage</span>
+                <button class="button">Order shooting</button>
+            </div>
+            <div class="price__item">
+                <h3 class="price__heading">Gold</h3>
+                <p class="price__work">1000 $</p>
+                <span>Tree locations or more</span>
+                <span>300 photos in color</span>
+                <span>50 photos in retouch</span>
+                <span>Readiness 1 weeks</span>
+                <span>Make up, visage, hairstyle</span>
+                <button class="button">Order shooting</button>
+            </div>
+        </div>
+        </div>
+    </section>
 
-    <section class="contacts"></section>
+    <section class="contacts">
+        <div class="wrapper">
+            <h2>Contact me</h2>
+            <form action="" method="post">
+                <input type="email" name="email" placeholder="E-mail">
+                <input type="tel" name="phone" placeholder="Phone">
+                <textarea name="Message" cols="30" rows="3"></textarea>
+            </form>
+            <button class="button">Send message</button>
+        </div>
+    </section>
 
 </main>
 
 <footer class="footer">
-
+<div class="wrapper">
+    <div class="year">
+        <p>©</p>
+        <p>2022</p>
+        <p><a href="https://github.com/netrodgen">github</a></p>
+    </div>
+    <p>Yaroslav Demin</p>
+    <nav>
+        <ul>
+            <li><a href="#"><img src="" alt="instagran"></a></li>
+            <li><a href="#"><img src="" alt="facebook"></a></li>
+            <li><a href="#"><img src="" alt="twitter"></a></li>
+            <li><a href="#"><img src="" alt="pinterest"></a></li>
+        </ul>
+    </nav>
+</div>
 </footer>
 
 
