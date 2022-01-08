@@ -1,0 +1,21 @@
+html{
+  font-size: 10px;
+  background: $color-background;
+  color: $color-white;
+  scroll-behavior: smooth; // плавный переход по якорным точкам
+}
+
+body{
+  font-size: 1.8rem;
+  @extend %font-add;
+}
+
+a{
+  @include font(2rem, normal, 5rem);
+  color:$color-white;
+  text-decoration: none;
+}
+a:hover{
+  @extend %transition;
+  color: $color-brand;
+}

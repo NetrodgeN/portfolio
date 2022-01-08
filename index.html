@@ -5,43 +5,47 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="sass/style.css">
 </head>
 <body>
 
 <header class="header">
     <div class="wrapper header__wrapper">
-        <a href="#" class="logo"><img src="#" alt="logo"></a>
+         <a href="#" class="logo"></a>
         <nav class="header__navigation">
-            <ul>
-            <li><a href="#" class="link">Skills</a></li>
-            <li><a href="#" class="link">Portfolio</a></li>
-            <li><a href="#" class="link">Video</a></li>
-            <li><a href="#" class="link">Price</a></li>
-            <li><a href="#" class="link">Contacts</a></li>
+            <ul class="header__list">
+            <li class="navigation__link"><a href="#skills" class="link">Skills</a></li>
+            <li class="navigation__link"><a href="#portfolio" class="link">Portfolio</a></li>
+            <li class="navigation__link"><a href="#video" class="link">Video</a></li>
+            <li class="navigation__link"><a href="#price" class="link">Price</a></li>
+            <li class="navigation__link"><a href="#contacts" class="link">Contacts</a></li>
             </ul>
         </nav>
 
         <div class="header__language">
-            <input type="radio" id="en" name="language" value="eng">
-            <label for="en">en</label>
-
+            <input  type="radio" id="en" name="language" value="eng">
+            <label class="language" for="en">en</label>
+                /
             <input type="radio" id="ru" name="language" value="ru">
-            <label for="ru">ru</label>
-
-
+            <label class="language"  for="ru">ru</label>
         </div>
     </div>
 </header>
 
 <main class="main">
     <section class="hero" id="hero">
+        <div class="wrapper">
         <div class="hero__content">
             <h1 class="hero__name">Alexa Rise</h1>
             <p class="hero__text">Save sincere emotions, romantic feelings and
                 happy moments of life together with professional
                 photographer Alexa Rise</p>
             <button class="button button__base">Hire me</button>
+        </div>
         </div>
     </section>
 
@@ -52,22 +56,22 @@
             </div>
             <div class="skills__4columns">
                 <div class="skills-item">
-                    <img src="" alt="">
+                    <img src="./assets/svg/camera%201.svg" alt="photo">
                     <h4>Digital photography</h4>
                     <p class="skills__text">High-quality photos in the studio and on the nature</p>
                 </div>
                 <div class="skills-item">
-                    <img src="" alt="">
+                    <img src="./assets/svg/video%201.svg" alt="video">
                     <h4>Video shooting</h4>
                     <p class="skills__text">Capture your moments so that they always stay with you</p>
                 </div>
                 <div class="skills-item">
-                    <img src="" alt="">
+                    <img src="./assets/svg/image%201.svg" alt="pictures">
                     <h4>Retouch</h4>
                     <p class="skills__text">I strive to make photography surpass reality</p>
                 </div>
                 <div class="skills-item">
-                    <img src="" alt="">
+                    <img src="./assets/svg/mic%201.svg" alt="Audio">
                     <h4>Audio</h4>
                     <p class="skills__text">Professional sounds recording for video, advertising, portfolio</p>
                 </div>
@@ -75,7 +79,7 @@
         </div>
     </section>
 
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
         <div class="wrapper">
             <div class="section__title">
                 <h2>Portfolio</h2>
@@ -87,26 +91,28 @@
                 <button class="button">Autumn</button>
             </div>
             <div class="photo-library">
-                <img src="#" alt="#" class ="portfolio-item">
-                <img src="#" alt="#" class ="portfolio-item">
-                <img src="#" alt="#" class ="portfolio-item">
-                <img src="#" alt="#" class ="portfolio-item">
-                <img src="#" alt="#" class ="portfolio-item">
-                <img src="#" alt="#" class ="portfolio-item">
+                <img src="./assets/img/portfolio-img.png" alt="#" class ="portfolio-item">
+                <img src="./assets/img/portfolio-img2.png" alt="#" class ="portfolio-item">
+                <img src="./assets/img/portfolio-img3.png" alt="#" class ="portfolio-item">
+                <img src="./assets/img/portfolio-img4.png" alt="#" class ="portfolio-item">
+                <img src="./assets/img/portfolio-img5.png" alt="#" class ="portfolio-item">
+                <img src="./assets/img/portfolio-img6.png" alt="#" class ="portfolio-item">
             </div>
         </div>
     </section>
 
-    <section class="video">
+    <section class="video" id="video">
+        <div class="wrapper">
         <div class="section__title">
             <h2>Video</h2>
         </div>
         <div class="player">
 
         </div>
+        </div>
     </section>
 
-    <section class="price">
+    <section class="price" id="price">
         <div class="wrapper">
         <div class="section__title">
             <h2>Price</h2>
@@ -146,7 +152,7 @@
         </div>
     </section>
 
-    <section class="contacts">
+    <section class="contacts" id="contacts">
         <div class="wrapper">
             <h2>Contact me</h2>
             <form action="" method="post">
@@ -160,7 +166,7 @@
 
 </main>
 
-<footer class="footer">
+<footer class="footer" id="footer">
 <div class="wrapper">
     <div class="year">
         <p>©</p>
@@ -170,10 +176,10 @@
     <p>Yaroslav Demin</p>
     <nav>
         <ul>
-            <li><a href="#"><img src="" alt="instagran"></a></li>
-            <li><a href="#"><img src="" alt="facebook"></a></li>
-            <li><a href="#"><img src="" alt="twitter"></a></li>
-            <li><a href="#"><img src="" alt="pinterest"></a></li>
+            <li><a href="#"><img src="./assets/svg/instagram.svg" alt="instagran"></a></li>
+            <li><a href="#"><img src="./assets/svg/fb.svg" alt="facebook"></a></li>
+            <li><a href="#"><img src="./assets/svg/tw.svg" alt="twitter"></a></li>
+            <li><a href="#"><img src="./assets/svg/pt.svg" alt="pinterest"></a></li>
         </ul>
     </nav>
 </div>
