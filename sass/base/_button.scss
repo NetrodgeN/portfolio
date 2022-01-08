@@ -1,0 +1,21 @@
+.button{
+  @extend %font-add;
+  @include font(2rem, 400, 4rem);
+  text-align: center;
+  width: 220px;
+  height: 55px;
+  //color:$color-background;
+  //background-color: $color-brand;
+}
+
+.button__base{
+  color:$color-background;
+  background-color: $color-brand;
+  border:0;
+  &:hover{
+    color:$color-white;
+    @extend %transition;
+  }
+}
+
+

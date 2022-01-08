@@ -348,10 +348,11 @@ template {
   display: none;
 }
 
-section, main, footer, header, article {
+section, main, footer, header, article, span {
   display: block;
 }
 
 *{
   box-sizing: border-box;
 }
+

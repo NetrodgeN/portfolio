@@ -19,3 +19,44 @@ a:hover{
   @extend %transition;
   color: $color-brand;
 }
+
+h1{
+  @extend %font-main;
+  @include font(6rem, 700, 12rem);
+  margin: 0;
+}
+
+h2{
+  @extend %font-main;
+  @include font(4rem, 700,8rem);
+  color:$color-brand;
+  text-align: center;
+}
+
+h3{
+  @extend %font-main;
+  @include font(2.8rem, 700, 5.6rem);
+  //margin:0;?????
+  text-align: center;
+}
+
+.price__work{
+  @extend %font-main;
+  @include font(2.4rem, 700, 4.8rem);
+  text-align: center;
+}
+
+span{
+  @include font(1.8rem, 400, 3.6rem);
+  text-align: center;
+}
+
+h4{
+  @include font(2rem, 700, 4rem);
+  text-align: center;
+}
+
+.skills__text{
+  @include font(1.8rem, 400, 3.6rem);
+  text-align: center;
+}
