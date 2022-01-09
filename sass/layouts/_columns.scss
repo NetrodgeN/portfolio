@@ -1,6 +1,6 @@
 
 .skills__4columns{
-  @include columns(21%);
+  @include columns(20%);
 }
 
 .button__column{
@@ -15,4 +15,14 @@
 .photo-library{
   @include columns(30%);
   gap:20px;
+}
+
+.price__columns{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  >*{
+  flex-basis: 450px;
+  }
 }

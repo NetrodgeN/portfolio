@@ -415,6 +415,7 @@ h3 {
   line-height: 4.8rem;
   font-style: normal;
   text-align: center;
+  color: #BDAE82;
 }
 
 span {
@@ -431,6 +432,7 @@ h4 {
   line-height: 4rem;
   font-style: normal;
   text-align: center;
+  margin: 0;
 }
 
 .skills__text {
@@ -566,13 +568,49 @@ input {
   margin-right: 350px;
 }
 
+.skills-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-end;
+  background-position: center top;
+  background-repeat: no-repeat;
+  height: 240px;
+}
+.skills-item:nth-child(1) {
+  background-image: url("../assets/svg/camera 1.svg");
+  background-size: 62px 50px;
+}
+.skills-item:nth-child(2) {
+  background-image: url("../assets/svg/video 1.svg");
+}
+.skills-item:nth-child(3) {
+  background-image: url("../assets/svg/image 1.svg");
+}
+.skills-item:nth-child(4) {
+  background-image: url("../assets/svg/mic 1.svg");
+}
+
+.photo-library {
+  padding-top: 60px;
+}
+
+.price__item {
+  border: 3px solid #BDAE82;
+}
+
+.button__order {
+  display: block;
+  margin: 40px auto 43px;
+}
+
 .skills__4columns {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 .skills__4columns > * {
-  flex-basis: 21%;
+  flex-basis: 20%;
 }
 
 .button__column {
@@ -591,6 +629,16 @@ input {
 }
 .photo-library > * {
   flex-basis: 30%;
+}
+
+.price__columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+.price__columns > * {
+  flex-basis: 450px;
 }
 
 /*# sourceMappingURL=style.css.map */

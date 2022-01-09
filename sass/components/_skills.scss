@@ -15,3 +15,30 @@
     margin-right: 350px;
   }
 }
+
+.skills-item{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-end;
+  background-position:center top;
+  background-repeat: no-repeat;
+  height: 240px;
+
+  &:nth-child(1){
+    background-image: url("../assets/svg/camera 1.svg");
+    background-size: 62px 50px;
+  }
+  &:nth-child(2){
+    background-image: url("../assets/svg/video 1.svg");
+  }
+  &:nth-child(3){
+    background-image: url("../assets/svg/image 1.svg");
+  }
+  &:nth-child(4){
+    background-image: url("../assets/svg/mic 1.svg");
+  }
+
+
+}
+
