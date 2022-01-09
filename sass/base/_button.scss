@@ -19,4 +19,14 @@
   }
 }
 
+.button__portfolio{
+  border: 2px solid $color-brand;
+  background-color: transparent;
+  color: $color-brand;
+  &:hover{
+    color:$color-white;
+    @extend %transition;
+  }
+}
+
 

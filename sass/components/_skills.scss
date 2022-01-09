@@ -1,0 +1,17 @@
+.section__title{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 100px 0 60px 0;
+  &:before, &:after {
+    content: '';
+    flex: 1;
+    border-bottom: 2px solid $color-brand;
+  }
+  &:not(:empty)::before{
+    margin-left: 350px;
+  }
+  &:not(:empty)::after {
+    margin-right: 350px;
+  }
+}
