@@ -27,10 +27,10 @@
         </nav>
 
         <div class="header__language">
-            <input  type="radio" id="en" name="language" value="eng">
+            <input class="switch__language" type="radio" id="en" name="language" value="eng">
             <label class="language" for="en">en</label>
                 /
-            <input type="radio" id="ru" name="language" value="ru">
+            <input class="switch__language" type="radio" id="ru" name="language" value="ru">
             <label class="language"  for="ru">ru</label>
         </div>
     </div>
@@ -121,7 +121,7 @@
             <div class="price__item">
                 <h3 class="price__heading">Standart</h3>
                 <p class="price__work">500 $</p>
-                <span>One location <!--делать блоком --> </span>
+                <span>One location</span>
                 <span>120 photos in color</span>
                 <span>12 photos in retouch</span>
                 <span>Readiness 2-3 weeks</span>
@@ -153,14 +153,18 @@
     </section>
 
     <section class="contacts" id="contacts">
-        <div class="wrapper">
-            <h2>Contact me</h2>
-            <form action="" method="post">
-                <input type="email" name="email" placeholder="E-mail">
-                <input type="tel" name="phone" placeholder="Phone">
-                <textarea name="Message" cols="30" rows="3"></textarea>
+        <div class="wrapper contacts__wrapper">
+
+            <div class="contact__container">
+            <h2 class="contact-me">Contact me</h2>
+            <form class="contact-form" action="#" method="post">
+                    <input type="email" class="contact-us__line" name="email" placeholder="E-mail">
+                    <input  type="tel" class="contact-us__line" name="phone" placeholder="Phone">
+                    <textarea class="contact-us__line" name="Message" cols="30" rows="3" placeholder="Message"></textarea>
             </form>
             <button class="button button__base">Send message</button>
+
+            </div>
         </div>
     </section>
 

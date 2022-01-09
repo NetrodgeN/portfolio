@@ -35,12 +35,6 @@
   contrast(87%);
 }
 
-input{
- display: none;
-}
-
-
-
 .language:hover{
   @extend %transition;
   color:$color-brand;
@@ -48,4 +42,8 @@ input{
 
 .header__language{
   @include font(2rem,700, 5rem);
+}
+
+.switch__language{
+  display: none;
 }
