@@ -60,3 +60,9 @@ h4{
   @include font(1.8rem, 400, 3.6rem);
   text-align: center;
 }
+
+.hero__text{
+  @include font(2rem, 400, 4rem);
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
