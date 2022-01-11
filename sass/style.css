@@ -353,7 +353,7 @@ section, main, footer, header, article, span {
   font-family: "Merriweather", Verdana, serif;
 }
 
-.language:hover, .logo, .button__portfolio:hover, .button__base:hover, a:hover {
+.footer__link:hover, .language:hover, .logo, .button__portfolio:hover, .button__base:hover, a:hover {
   transition: all 0.3s ease-out;
 }
 
@@ -537,6 +537,33 @@ h4 {
   display: none;
 }
 
+.footer__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 150px;
+}
+
+.year {
+  display: flex;
+}
+
+.footer__navigation {
+  display: flex;
+}
+
+.footer__link, .footer__text {
+  list-style: none;
+  padding-right: 20px;
+}
+.footer__link:last-child, .footer__text:last-child {
+  padding: 0;
+}
+
+.footer__github {
+  line-height: 1.15;
+}
+
 .hero__wrapper {
   background-image: url("../assets/img/bg.png");
   background-position: center -90px;
@@ -605,49 +632,43 @@ h4 {
 }
 
 .contacts__wrapper {
-  background: url("../assets/img/contacts.png");
   background-size: auto 700px;
-  background-position: center center;
-  background-repeat: no-repeat;
+  background: url("../assets/img/contacts.png") no-repeat center center;
+}
+
+.contact-me {
+  margin: 0;
+  text-align: left;
+  padding-bottom: 41px;
 }
 
 .contact__container {
-  display: flex;
-  align-content: flex-end;
-  flex-direction: column;
-  align-items: flex-start;
-  height: 445px;
-  flex-wrap: wrap;
-  justify-content: center;
+  padding-top: 60px;
+  padding-bottom: 195px;
 }
-
-textarea {
+.contact__container input, .contact__container textarea {
+  border: 2px solid #BDAE82;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 5px 20px;
+  color: #ffffff;
+  width: 32%;
+  height: 50px;
+  margin-bottom: 20px;
+}
+.contact__container input:focus, .contact__container textarea:focus {
+  outline: 1px solid #BDAE82;
+}
+.contact__container textarea {
   resize: none;
   height: 100px;
   padding: 13px 20px;
   margin-bottom: 30px;
 }
 
-.contact-form {
-  display: flex;
-  flex-direction: column;
-}
-
-.contact-us__line {
-  margin-bottom: 20px;
-  border: 2px solid #BDAE82;
-  background: rgba(0, 0, 0, 0.7);
-  padding: 5px 20px;
-  color: #ffffff;
-}
-.contact-us__line::placeholder {
+.inputs::placeholder {
   font-family: inherit;
   color: #bdae82;
   font-size: 20px;
-}
-
-.contact-me {
-  margin: 0;
 }
 
 .skills__4columns {
@@ -686,6 +707,13 @@ textarea {
 }
 .price__columns > * {
   flex-basis: 450px;
+}
+
+.columns__form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: flex-end;
 }
 
 /*# sourceMappingURL=style.css.map */

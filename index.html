@@ -154,16 +154,18 @@
 
     <section class="contacts" id="contacts">
         <div class="wrapper contacts__wrapper">
-
             <div class="contact__container">
-            <h2 class="contact-me">Contact me</h2>
             <form class="contact-form" action="#" method="post">
-                    <input type="email" class="contact-us__line" name="email" placeholder="E-mail">
-                    <input  type="tel" class="contact-us__line" name="phone" placeholder="Phone">
-                    <textarea class="contact-us__line" name="Message" cols="30" rows="3" placeholder="Message"></textarea>
+                <div class="columns__form">
+                    <h2 class="contact-me">Contact me</h2>
+                    <input type="email" class="inputs" name="email" placeholder="E-mail">
+                    <input  type="tel" class="inputs" name="phone" placeholder="Phone">
+                    <textarea class="inputs" name="Message" cols="30" rows="3" placeholder="Message"></textarea>
+                     <div class="contact__button">
+                         <button class="button button__base">Send message</button>
+                     </div>
+                </div>
             </form>
-            <button class="button button__base">Send message</button>
-
             </div>
         </div>
     </section>
@@ -171,19 +173,19 @@
 </main>
 
 <footer class="footer" id="footer">
-<div class="wrapper">
+<div class="wrapper footer__wrapper">
     <div class="year">
-        <p>©</p>
-        <p>2022</p>
-        <p><a href="https://github.com/netrodgen">github</a></p>
+        <p class="footer__text">©</p>
+        <p class="footer__text">2022</p>
+        <p class="footer__text"><a class="footer__github" href="https://github.com/netrodgen">github</a></p>
     </div>
     <p>Yaroslav Demin</p>
-    <nav>
-        <ul>
-            <li><a href="#"><img src="./assets/svg/instagram.svg" alt="instagran"></a></li>
-            <li><a href="#"><img src="./assets/svg/fb.svg" alt="facebook"></a></li>
-            <li><a href="#"><img src="./assets/svg/tw.svg" alt="twitter"></a></li>
-            <li><a href="#"><img src="./assets/svg/pt.svg" alt="pinterest"></a></li>
+    <nav >
+        <ul class="footer__navigation">
+            <li class="footer__link"><a href="#"><img src="./assets/svg/instagram.svg" alt="instagran"></a></li>
+            <li class="footer__link"><a href="#"><img src="./assets/svg/fb.svg" alt="facebook"></a></li>
+            <li class="footer__link"><a href="#"><img src="./assets/svg/tw.svg" alt="twitter"></a></li>
+            <li class="footer__link"><a href="#"><img src="./assets/svg/pt.svg" alt="pinterest"></a></li>
         </ul>
     </nav>
 </div>
