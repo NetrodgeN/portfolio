@@ -1,6 +1,9 @@
 .contacts__wrapper{
   background-size: auto 700px;
   background: url('../assets/img/contacts.png') no-repeat center center;
+  @include media-tablet{
+  background-size: auto 600px;
+  }
 }
 .contact-me{
   margin:0;
@@ -11,6 +14,10 @@
 .contact__container{
   padding-top: 60px;
   padding-bottom: 195px;
+  @include media-tablet{
+    padding-top: 81px;
+    padding-bottom: 111px;
+  };
   input, textarea{
     border:2px solid $color-brand;
     background: rgba($color-background, 0.7);
@@ -19,6 +26,9 @@
     width: 32%;
     height: 50px;
     margin-bottom: 20px;
+    @include media-tablet{
+      width: 69%;
+    }
     &:focus{
       outline: 1px solid $color-brand;
     }

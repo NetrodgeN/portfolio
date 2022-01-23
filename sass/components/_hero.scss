@@ -1,11 +1,31 @@
 .hero__wrapper{
+
     background-image: url('../assets/img/bg.png');
     background-position: center -90px;
     background-repeat: no-repeat;
     padding-top: 160px;
     padding-bottom: 330px;
+    @include media-tablet{
+        height: 500px;
+        background-position: -5px -119px;
+        background-size: auto 620px;
+        padding-top: 78px;
+    }
 }
 .hero__content{
     padding-left: 60px;
     max-width: 530px;
+    @include media-tablet{
+        padding-left: 0;
+        max-width: 400px;
+        //margin-top: 20px;
+
+    }
+}
+
+.hero__text{
+    @include media-tablet{
+        margin-top:20px;
+        margin-bottom: 60px;
+    }
 }

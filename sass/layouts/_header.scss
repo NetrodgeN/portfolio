@@ -3,11 +3,20 @@
   align-items: center;
   justify-content: space-between;
   background: url('../assets/img/bg.png') no-repeat center 0;
+  @include media-tablet{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-position: -5px -30px;
+    background-size: auto 620px;
+  }
 
 }
 
 .header__navigation{
   margin-left: auto;
+  @include media-tablet {
+    display: none;
+  }
 }
 
 .header__list{
@@ -42,7 +51,12 @@
 
 .header__language{
   @include font(2rem,700, 5rem);
+  @include media-tablet{
+    margin-left: auto;
+    margin-right: 20px;
+  }
 }
+
 
 .switch__language{
   display: none;

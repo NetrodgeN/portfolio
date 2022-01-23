@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   text-align: center;
-  margin: 100px 0 60px 0;
+  padding: 100px 0 60px 0;
   &:before, &:after {
     content: '';
     flex: 1;
@@ -10,9 +10,15 @@
   }
   &:not(:empty)::before{
     margin-left: 350px;
+    @include media-tablet{
+      margin-left: 142px;
+    }
   }
   &:not(:empty)::after {
     margin-right: 350px;
+    @include media-tablet{
+      margin-right: 142px;
+    }
   }
 }
 
@@ -24,7 +30,9 @@
   background-position:center top;
   background-repeat: no-repeat;
   height: 240px;
-
+  @include media-tablet{
+    height: 224px;
+  }
   &:nth-child(1){
     background-image: url("../assets/svg/camera 1.svg");
     background-size: 62px 50px;

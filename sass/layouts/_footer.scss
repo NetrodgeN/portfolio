@@ -3,6 +3,10 @@
   align-items: center;
   justify-content: space-between;
   height: 150px;
+  @include media-tablet{
+    flex-direction: column;
+    justify-content: space-around;
+  }
 }
 
 .year{
@@ -11,6 +15,11 @@
 
 .footer__navigation{
   display: flex;
+  @include media-tablet{
+    padding-inline-start: 0;
+    margin:0;
+
+  }
 }
 
 .footer__link, .footer__text{
@@ -19,6 +28,9 @@
   &:last-child{
     padding: 0;
   }
+  @include media-tablet{
+    margin: 0;
+  }
 }
 
 .footer__github{
@@ -26,4 +38,8 @@
 }
 .footer__link:hover{
   @extend %transition;
+}
+
+.creator{
+  margin:0;
 }

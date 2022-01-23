@@ -1,6 +1,11 @@
 
 .skills__4columns{
   @include columns(20%);
+  @include media-tablet{
+    @include columns(46%);
+    gap: 36px;
+  }
+
 }
 
 .button__column{
@@ -15,6 +20,10 @@
 .photo-library{
   @include columns(30%);
   gap:20px;
+  @include media-tablet{
+    justify-content: center;
+    gap:25px;
+  }
 }
 
 .price__columns{
@@ -26,6 +35,13 @@
   >*{
   flex-basis: 450px;
   }
+  @include media-tablet{
+  gap: 45px;
+    padding-bottom: 80px;
+    >*{
+      flex-basis: 420px;
+    }
+  }
 }
 
 .columns__form{
@@ -33,4 +49,8 @@
   flex-wrap: wrap;
   flex-direction: column;
   align-content: flex-end;
+  @include media-tablet{
+    align-items: center;
+    align-content: center;
+  }
 }

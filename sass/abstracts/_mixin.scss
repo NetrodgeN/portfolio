@@ -13,3 +13,17 @@
     flex-basis: $width;
   }
 }
+
+@mixin media-laptop{
+  @media (max-width: $content-width) {@content;}
+}
+
+@mixin media-tablet{
+  @media (max-width: $tablet-width) {@content;}
+}
+//
+//@media screen and (max-width: 500px) {
+//  .logo{
+//    //width: ;
+//  }
+//}

@@ -24,6 +24,9 @@ h1{
   @extend %font-main;
   @include font(6rem, 700, 12rem);
   margin: 0;
+  @include media-tablet{
+    @include font(3.2rem, 400, 6.4rem);
+  }
 }
 
 h2{
@@ -34,6 +37,9 @@ h2{
   position: relative;
   overflow: hidden;
   margin: 0 2rem;
+  @include media-tablet{
+    @include font(3.2rem, 700, 4rem);
+  }
 }
 
 h3{
@@ -59,15 +65,27 @@ h4{
   @include font(2rem, 700, 4rem);
   text-align: center;
   margin:0;
+  @include media-tablet{
+    margin-bottom: 20px;
+  }
 }
 
 .skills__text{
   @include font(1.8rem, 400, 3.6rem);
   text-align: center;
+  @include media-tablet{
+    @include font(1.8rem, 400, 2.178rem);
+    margin-bottom: 34px;
+    margin-top: 0;
+  }
 }
 
 .hero__text{
   @include font(2rem, 400, 4rem);
   margin-top: 10px;
   margin-bottom: 25px;
+  @include media-tablet{
+    @include font(2rem, 400, 2.42rem);
+  }
 }
+
