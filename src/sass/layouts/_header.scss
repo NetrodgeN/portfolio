@@ -15,19 +15,41 @@
 .header__navigation{
   margin-left: auto;
   @include media-tablet {
-    display: none;
+    display: block;
+    position: absolute;
+    //top: 134px;
+    top: 0;
+    bottom: 0;
+    //left: 148px;
+    background: $color-background;
+    width: 100%;
+    box-shadow: 0 4px 2px -2px rgba(36, 36, 36, 0.17);
+    left: 100%;
+    transition: all 0.4s ease;
   }
 }
+.header__navigation.open{
+  left: 148px;
+}
+
 
 .header__list{
   display: flex;
   align-items: center;
   margin:0;
+  @include media-tablet{
+    display: block;
+    padding-left:127px;
+    padding-top: 134px;
+  }
 }
 
 .navigation__link{
   list-style: none;
   padding: 20px 30px 20px 0;
+  @include media-tablet{
+    font-size: 34.82px;
+  }
 }
 
 .logo{

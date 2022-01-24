@@ -34,7 +34,7 @@ h2{
   @include font(4rem, 700,8rem);
   color:$color-brand;
   text-align: center;
-  position: relative;
+  //position: relative;
   overflow: hidden;
   margin: 0 2rem;
   @include media-tablet{
