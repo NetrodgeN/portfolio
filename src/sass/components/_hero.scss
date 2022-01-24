@@ -11,6 +11,9 @@
         background-size: auto 620px;
         padding-top: 78px;
     }
+    @include mobile-big-width{
+        background-size: auto 518px;
+    }
 }
 .hero__content{
     padding-left: 60px;

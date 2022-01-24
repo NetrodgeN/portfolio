@@ -4,6 +4,9 @@
   @include media-tablet{
   background-size: auto 600px;
   }
+  @include mobile-big-width{
+    background-size: auto 550px;
+  }
 }
 .contact-me{
   margin:0;
@@ -28,6 +31,9 @@
     margin-bottom: 20px;
     @include media-tablet{
       width: 69%;
+    }
+    @include mobile-big-width{
+      width: 100%;
     }
     &:focus{
       outline: 1px solid $color-brand;

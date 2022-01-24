@@ -21,9 +21,19 @@
 @mixin media-tablet{
   @media (max-width: $tablet-width) {@content;}
 }
-//
-//@media screen and (max-width: 500px) {
-//  .logo{
-//    //width: ;
-//  }
-//}
+
+@mixin mobile-big-width {
+  @media (max-width: $mobile-big-width) {@content}
+}
+
+@mixin mobile-small-width{
+  @media (max-width: $mobile-small-width) {@content;}
+}
+
+@mixin mobile-fix{
+  @media (max-width: $mobile-fix-width) {@content;}
+}
+
+@mixin fix{
+  @media (max-width: $fix) {@content;}
+}

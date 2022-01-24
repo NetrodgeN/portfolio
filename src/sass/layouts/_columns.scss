@@ -1,12 +1,31 @@
 
+
 .skills__4columns{
-  @include columns(20%);
+  @include columns(23%);
+  @include fix{
+    @include columns(46%);
+    gap: 36px;
+    > * {
+      flex-basis: 46%;
+    }
+  }
+
   @include media-tablet{
     @include columns(46%);
     gap: 36px;
+    > * {
+      flex-basis: 46%;
+    }
   }
 
+  @include mobile-fix{
+    >*{
+      flex-basis: unset;
+    }
+  }
 }
+
+
 
 .button__column{
   display: flex;
@@ -20,10 +39,18 @@
 .photo-library{
   @include columns(30%);
   gap:20px;
+
+  @include fix{
+    justify-content: center;
+  }
   @include media-tablet{
     justify-content: center;
     gap:25px;
   }
+  @include mobile-big-width{
+    gap:10px;
+  }
+
 }
 
 .price__columns{

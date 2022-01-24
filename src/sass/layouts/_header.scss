@@ -8,7 +8,9 @@
     padding-bottom: 20px;
     background-position: -5px -30px;
     background-size: auto 620px;
-
+  }
+  @include mobile-big-width{
+    background-size: auto 518px;
   }
 
 }
@@ -24,6 +26,10 @@
     width: 620px;
     right: -620px;
     transition: all 0.5s ease;
+  }
+  @include mobile-big-width{
+    width: 414px;
+    right: -414px;
   }
 }
 

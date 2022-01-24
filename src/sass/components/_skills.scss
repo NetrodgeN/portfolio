@@ -9,15 +9,15 @@
     border-bottom: 2px solid $color-brand;
   }
   &:not(:empty)::before{
-    margin-left: 350px;
+    margin-left:25%;
     @include media-tablet{
-      margin-left: 142px;
+      margin-left: 10%;
     }
   }
   &:not(:empty)::after {
-    margin-right: 350px;
+    margin-right:25%;
     @include media-tablet{
-      margin-right: 142px;
+      margin-right: 10%;
     }
   }
 }
@@ -33,6 +33,8 @@
   @include media-tablet{
     height: 224px;
   }
+  //@include // 1050 flex-basis: 46%;
+
   &:nth-child(1){
     background-image: url("../../assets/svg/camera 1.svg");
     background-size: 62px 50px;
@@ -46,7 +48,7 @@
   &:nth-child(4){
     background-image: url("../../assets/svg/mic 1.svg");
   }
-
-
 }
+
+
 
