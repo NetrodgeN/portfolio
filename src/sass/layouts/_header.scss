@@ -8,6 +8,7 @@
     padding-bottom: 20px;
     background-position: -5px -30px;
     background-size: auto 620px;
+
   }
 
 }
@@ -16,20 +17,18 @@
   margin-left: auto;
   @include media-tablet {
     display: block;
-    position: absolute;
-    //top: 134px;
+    position: fixed;
     top: 0;
     bottom: 0;
-    //left: 148px;
     background: $color-background;
-    width: 100%;
-    box-shadow: 0 4px 2px -2px rgba(36, 36, 36, 0.17);
-    left: 100%;
-    transition: all 0.4s ease;
+    width: 620px;
+    right: -620px;
+    transition: all 0.5s ease;
   }
 }
+
 .header__navigation.open{
-  left: 148px;
+  right: 0;
 }
 
 
