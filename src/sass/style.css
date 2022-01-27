@@ -519,6 +519,11 @@ h4 {
   color: #ffffff;
 }
 
+.button__portfolio.active {
+  color: #000;
+  background-color: #bdae82;
+}
+
 .hamburger__line, .hamburger::after, .hamburger::before {
   content: "";
   display: inline-block;
