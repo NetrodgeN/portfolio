@@ -3,6 +3,7 @@ import {i18Obj} from './translate.js'
 // перевод сайта по соответствующим кнопкам
 const enLang = document.querySelector('.en-link')
 const ruLang = document.querySelector('.ru-link')
+
 enLang.addEventListener('click',  () => getTranslate('en'));
 ruLang.addEventListener('click',  () => getTranslate('ru'));
 
@@ -10,7 +11,6 @@ function getTranslate (lang = 'ru') {
     const textForTranslate = document.querySelectorAll('[data-i18n]');
     textForTranslate.forEach((elem) => {
         elem.textContent =  i18Obj[lang][elem.dataset.i18n]
-        console.log( i18Obj[lang][elem.dataset.i18n])
     })
 }
 

@@ -609,6 +609,7 @@ h4 {
 @media (max-width: 414px) {
   .header__wrapper {
     background-size: auto 518px;
+    background-position: -175px -30px;
   }
 }
 
@@ -761,6 +762,7 @@ h4 {
 @media (max-width: 414px) {
   .hero__wrapper {
     background-size: auto 518px;
+    background-position: -175px -120px;
   }
 }
 
@@ -867,6 +869,7 @@ h4 {
 @media (max-width: 414px) {
   .contacts__wrapper {
     background-size: auto 550px;
+    background-position: -124px 0;
   }
 }
 
