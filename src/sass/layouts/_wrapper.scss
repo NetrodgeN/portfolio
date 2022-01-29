@@ -10,3 +10,8 @@
   }
 
 }
+.video__wrapper{
+  @include media-tablet{
+    padding:0;
+  }
+}

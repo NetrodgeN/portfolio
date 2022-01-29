@@ -171,3 +171,31 @@ position: relative;
   color: white;
   border: none;
 }
+
+.play__button{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background: inherit;
+  border: none;
+  @extend %transition;
+  color:$color-brand;
+
+}
+.play-img:hover {
+  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+  contrast(87%);
+  cursor: pointer;
+}
+.play__button:fullscreen{
+  position: absolute;
+
+}
+
+.playhover{
+  opacity: 0;
+  z-index: 2147483647;
+}

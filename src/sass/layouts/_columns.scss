@@ -39,12 +39,9 @@
 .photo-library{
   @include columns(30%);
   gap:20px;
+  justify-content: center;
 
-  @include fix{
-    justify-content: center;
-  }
   @include media-tablet{
-    justify-content: center;
     gap:25px;
   }
   @include mobile-big-width{

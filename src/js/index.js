@@ -54,8 +54,7 @@ const player = document.querySelector('.player');
 const video = player.querySelector('.viewer');
 const progress = player.querySelector('.progress');
 const progressBar = player.querySelector('.progress__filled');
-const toggle = player.querySelector('.toggle');
-const skippButtons = player.querySelectorAll('[data-skip]');
+const toggle = player.querySelectorAll('.toggle');
 const ranges = player.querySelectorAll('.player__slider');
 const fullScreen = player.querySelector('.player__fullscreen');
 const mute = player.querySelector('.mute');
@@ -63,6 +62,8 @@ const mute = player.querySelector('.mute');
 function togglePlay(){
      const method = video.paused ? 'play' : 'pause';
      video[method]();
+     videoplay.classList.toggle('playhover');
+     // console.log();
 }
 
 function updateButton(){
@@ -70,9 +71,6 @@ function updateButton(){
     toggle.textContent = icon;
 }
 
-function skip(){
-    video.currentTime += parseFloat(this.dataset.skip);
-}
 
 function handleRangeUpdate(){
     video[this.name] = this.value;
@@ -88,14 +86,24 @@ function scrub(e){
     video.currentTime = scrubTime;
 }
 
+const videoplay = document.querySelector('.play__button');
+// videoplay.addEventListener('click', togglePlay);
+
+
+// videoplay.addEventListener('click',
+//     () => {
+//         togglePlay();
+//         videoplay.classList.toggle('playhover');
+//     });
+
 
 //event listens
 video.addEventListener('click', togglePlay);
 video.addEventListener('play', updateButton);
 video.addEventListener('pause', updateButton);
 video.addEventListener('timeupdate', handleProgress);
-toggle.addEventListener('click', togglePlay);
-skippButtons.forEach(button => button.addEventListener('click',skip));
+// toggle.addEventListener('click', togglePlay);
+toggle.forEach(button => button.addEventListener('click',togglePlay));
 
 ranges.forEach(range => range.addEventListener('change', handleRangeUpdate));
 ranges.forEach(range => range.addEventListener('mousemove', handleRangeUpdate));
