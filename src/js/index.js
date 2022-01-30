@@ -54,7 +54,7 @@ const player = document.querySelector('.player');
 const video = player.querySelector('.viewer');
 const progress = player.querySelector('.progress');
 const progressBar = player.querySelector('.progress__filled');
-const toggle = player.querySelectorAll('.toggle');
+const toggle = player.querySelector('.toggle');
 const ranges = player.querySelectorAll('.player__slider');
 const fullScreen = player.querySelector('.player__fullscreen');
 const mute = player.querySelector('.mute');
@@ -62,15 +62,12 @@ const mute = player.querySelector('.mute');
 function togglePlay(){
      const method = video.paused ? 'play' : 'pause';
      video[method]();
-     videoplay.classList.toggle('playhover');
-     // console.log();
 }
 
 function updateButton(){
     const icon = this.paused ? '►' : '❚ ❚';
     toggle.textContent = icon;
 }
-
 
 function handleRangeUpdate(){
     video[this.name] = this.value;
@@ -86,24 +83,15 @@ function scrub(e){
     video.currentTime = scrubTime;
 }
 
-const videoplay = document.querySelector('.play__button');
-// videoplay.addEventListener('click', togglePlay);
-
-
-// videoplay.addEventListener('click',
-//     () => {
-//         togglePlay();
-//         videoplay.classList.toggle('playhover');
-//     });
-
-
 //event listens
 video.addEventListener('click', togglePlay);
+
 video.addEventListener('play', updateButton);
 video.addEventListener('pause', updateButton);
 video.addEventListener('timeupdate', handleProgress);
-// toggle.addEventListener('click', togglePlay);
-toggle.forEach(button => button.addEventListener('click',togglePlay));
+toggle.addEventListener('click', togglePlay);
+
+
 
 ranges.forEach(range => range.addEventListener('change', handleRangeUpdate));
 ranges.forEach(range => range.addEventListener('mousemove', handleRangeUpdate));
@@ -119,5 +107,51 @@ mute.addEventListener('click', ()=>{
 fullScreen.addEventListener('click', () => {
     video.requestFullscreen();
 })
+
+
+//light-night theme
+//
+// const switchstyle = ['html'];
+// switchstyle.forEach(elem => elem.classList.remove('light-theme'))
+// event.target.classList.add('light-theme');
+
+const themeBtn = document.querySelector('.switch-mode');
+const allElements = ['html', '.button__portfolio',];
+
+function theme() {
+    allElements.forEach((elem) => {
+        const oneElem = document.querySelectorAll(elem);
+        oneElem.forEach((elem2) => {
+            elem2.classList.toggle('light-theme');
+        });
+    })
+}
+
+themeBtn.addEventListener('click', theme);
+
+
+//header
+function headerbg(){
+    const headerwrap = document.querySelector('.header__wrapper');
+    headerwrap.classList.toggle('header-light-theme');
+}
+
+themeBtn.addEventListener('click', headerbg);
+//hero
+function herobg(){
+    const headerwrap = document.querySelector('.hero__wrapper');
+    headerwrap.classList.toggle('hero-light-theme');
+}
+
+themeBtn.addEventListener('click', herobg);
+//contancts bg
+function contactsbg(){
+    const headerwrap = document.querySelector('.contacts__wrapper');
+    headerwrap.classList.toggle('contacts-light-theme');
+}
+
+themeBtn.addEventListener('click', contactsbg);
+
+
 
 

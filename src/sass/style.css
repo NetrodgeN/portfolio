@@ -524,6 +524,11 @@ h4 {
   background-color: #bdae82;
 }
 
+.switch-mode {
+  border: none;
+  background: inherit;
+}
+
 .hamburger__line, .hamburger::after, .hamburger::before {
   content: "";
   display: inline-block;
@@ -577,7 +582,6 @@ h4 {
 }
 
 .player {
-  border: 5px solid rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   position: relative;
   font-size: 0;
@@ -880,6 +884,10 @@ input[type=range]::-moz-range-thumb {
 
 .logo:hover {
   filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
+
+.language {
+  color: white;
 }
 
 .language:hover {
@@ -1233,6 +1241,27 @@ input[type=range]::-moz-range-thumb {
     align-items: center;
     align-content: center;
   }
+}
+
+.light-theme {
+  background-color: #ffffff;
+  color: #000;
+}
+
+.light-theme:hover {
+  color: #000;
+}
+
+.header-light-theme {
+  background: url("../../assets/img/bg-light.jpg") no-repeat center 0;
+}
+
+.hero-light-theme {
+  background-image: url("../../assets/img/bg-light.jpg");
+}
+
+.contacts-light-theme {
+  background: url("../../assets/img/contacts-light.jpg") no-repeat center center;
 }
 
 /*# sourceMappingURL=style.css.map */

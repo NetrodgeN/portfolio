@@ -1,0 +1,22 @@
+.light-theme{
+  background-color: $color-white;
+  color: #000;
+}
+
+.light-theme:hover{
+  color: #000;
+}
+
+.header-light-theme{
+  background: url('../../assets/img/bg-light.jpg') no-repeat center 0;
+}
+
+.hero-light-theme{
+  background-image: url('../../assets/img/bg-light.jpg');
+}
+
+.contacts-light-theme{
+  background: url('../../assets/img/contacts-light.jpg') no-repeat center center;
+}
+
+
