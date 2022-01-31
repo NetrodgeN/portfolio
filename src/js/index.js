@@ -110,13 +110,8 @@ fullScreen.addEventListener('click', () => {
 
 
 //light-night theme
-//
-// const switchstyle = ['html'];
-// switchstyle.forEach(elem => elem.classList.remove('light-theme'))
-// event.target.classList.add('light-theme');
-
-const themeBtn = document.querySelector('.switch-mode');
-const allElements = ['html', '.button__portfolio',];
+const themeBtn = document.querySelectorAll('.switch-mode');
+const allElements = ['html', '.button__portfolio',".footer__github"];
 
 function theme() {
     allElements.forEach((elem) => {
@@ -127,31 +122,37 @@ function theme() {
     })
 }
 
-themeBtn.addEventListener('click', theme);
-
-
-//header
-function headerbg(){
+function headerBg(){
     const headerwrap = document.querySelector('.header__wrapper');
     headerwrap.classList.toggle('header-light-theme');
 }
 
-themeBtn.addEventListener('click', headerbg);
-//hero
-function herobg(){
+function heroBg(){
     const headerwrap = document.querySelector('.hero__wrapper');
     headerwrap.classList.toggle('hero-light-theme');
 }
 
-themeBtn.addEventListener('click', herobg);
-//contancts bg
-function contactsbg(){
+function contactsBg(){
     const headerwrap = document.querySelector('.contacts__wrapper');
     headerwrap.classList.toggle('contacts-light-theme');
 }
 
-themeBtn.addEventListener('click', contactsbg);
+function allInOne (){
+    theme();
+    headerBg();
+    heroBg();
+    contactsBg();
+    // hider();
+}
 
+themeBtn.forEach(elem => elem.addEventListener('click', allInOne));
+themeBtn.forEach(elem => elem.addEventListener('click', hider));
+// themeBtn.addEventListener('click', allInOne);;
+
+function hider(event) {
+    themeBtn.forEach((element) => element.classList.remove('hide'));
+    event.target.classList.add('hide');
+}
 
 
 

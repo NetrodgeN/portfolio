@@ -36,6 +36,22 @@
 
 .switch-mode{
   border: none;
-  background: inherit;
+  margin-left: 10px;
+  //background: inherit;
 }
 
+.hide{
+  opacity: 0;
+  display: none;
+}
+.daylight{
+  background: url(../../assets/svg/carbon_sun.svg)  no-repeat center;
+  height: 45px;
+  width: 45px;
+
+}
+.night{
+  background: url(../../assets/svg/night.svg) no-repeat center;
+  height: 45px;
+  width: 45px;
+}

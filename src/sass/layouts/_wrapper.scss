@@ -8,7 +8,9 @@
   @include media-tablet{
     padding: 0 60px;
   }
-
+  @include mobile-big-width{
+    padding: 0 20px;
+  }
 }
 .video__wrapper{
   @include media-tablet{
