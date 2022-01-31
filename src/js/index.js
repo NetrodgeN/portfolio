@@ -113,11 +113,11 @@ fullScreen.addEventListener('click', () => {
 const themeBtn = document.querySelectorAll('.switch-mode');
 const allElements = ['html', '.button__portfolio',".footer__github"];
 
-function theme() {
+function theme(theme1 = 'light-theme') {
     allElements.forEach((elem) => {
         const oneElem = document.querySelectorAll(elem);
-        oneElem.forEach((elem2) => {
-            elem2.classList.toggle('light-theme');
+        oneElem.forEach((elem2) => {;
+            elem2.classList.toggle(theme1);
         });
     })
 }
@@ -142,17 +142,34 @@ function allInOne (){
     headerBg();
     heroBg();
     contactsBg();
-    // hider();
 }
 
 themeBtn.forEach(elem => elem.addEventListener('click', allInOne));
 themeBtn.forEach(elem => elem.addEventListener('click', hider));
-// themeBtn.addEventListener('click', allInOne);;
 
 function hider(event) {
     themeBtn.forEach((element) => element.classList.remove('hide'));
     event.target.classList.add('hide');
 }
 
+//local storage
 
+function setLocalStorage() {
+    const lang = 'en';
+    const mainTheme = 'dark';
+    localStorage.setItem('lang', lang);
+    localStorage.setItem('theme1', mainTheme)
+}
+window.addEventListener('beforeunload',setLocalStorage)
+
+
+function getLocalStorage(){
+    if(localStorage.getItem('lang')){
+        const lang = localStorage.getItem('lang');
+        const mainTheme = 'dark';
+        theme(mainTheme);
+        getTranslate(lang);
+    }
+}
+window.addEventListener('load', getLocalStorage);
 
