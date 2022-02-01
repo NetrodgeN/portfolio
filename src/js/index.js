@@ -158,7 +158,7 @@ function setLocalStorage() {
     const lang = 'en';
     const mainTheme = 'dark';
     localStorage.setItem('lang', lang);
-    localStorage.setItem('theme1', mainTheme)
+    localStorage.setItem('mainTheme', mainTheme)
 }
 window.addEventListener('beforeunload',setLocalStorage)
 
